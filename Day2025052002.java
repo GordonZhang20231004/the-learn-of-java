@@ -5,7 +5,6 @@ public class Day2025052002 {
 
         int[] numberArray = new int[4];
         Random random = new Random();
-        int[] newArray = new int[4];
         for (int i = 0; i < numberArray.length; i++) {
             numberArray[i] = random.nextInt(3) + 1;
         }
