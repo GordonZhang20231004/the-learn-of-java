@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 // 閏年の判断すること
 public class IsNotLeapYear {
     public static void main(String[] args) {

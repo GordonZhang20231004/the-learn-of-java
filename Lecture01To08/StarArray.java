@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class StarArray {
     public static void main(String[] args) {
         char[][] stars = new char[6][6];

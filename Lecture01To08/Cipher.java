@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class Cipher {
     public static void main(String[] args) {
         if (args.length == 0) {

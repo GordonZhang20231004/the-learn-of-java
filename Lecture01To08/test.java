@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class test {
     public static void main(String[] args) {
         // 次の考え方に従って0～9をカンマ区切りで表示するプログラムを書いてください．

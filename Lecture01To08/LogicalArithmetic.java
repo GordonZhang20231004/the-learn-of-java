@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class LogicalArithmetic {
     public static void main(String[] args) {
         int x = 365;

@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class TestPrintData {
     public static void main(String[] args) {
         printData(3);

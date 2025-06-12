@@ -1,3 +1,5 @@
+package Lecture01To08;
+
 public class JavaSwitch {
     public static void main(String[] args) {
 
