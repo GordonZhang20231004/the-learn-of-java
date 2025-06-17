@@ -1,4 +1,4 @@
-package Lecture09;
+package Lecture08;
 
 public class Point {
     private int x, y;

@@ -1,4 +1,4 @@
-package Lecture09;
+package Lecture08;
 
 public class PointTest {
     public static void main(String[] args) {
