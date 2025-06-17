@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 
 //再帰呼び出しの授業での練習
 public class Lecture0801 {

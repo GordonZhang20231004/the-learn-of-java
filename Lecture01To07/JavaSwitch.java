@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 
 public class JavaSwitch {
     public static void main(String[] args) {

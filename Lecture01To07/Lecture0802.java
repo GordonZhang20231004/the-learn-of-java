@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 //boolean型のメソッド
 
 import java.beans.Transient;

@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 
 import java.util.Random;
 import java.util.Scanner;

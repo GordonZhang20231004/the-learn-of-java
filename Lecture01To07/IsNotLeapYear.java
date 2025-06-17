@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 
 // 閏年の判断すること
 public class IsNotLeapYear {

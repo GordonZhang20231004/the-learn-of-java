@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 //講義資料＿1.データ型・変数・条件分岐
 
 public class JavaBasic {

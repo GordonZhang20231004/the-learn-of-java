@@ -1,4 +1,4 @@
-package Lecture01To08;
+package Lecture01To07;
 
 public class TicTacToe2Test {
     public static void main(String[] args) {
