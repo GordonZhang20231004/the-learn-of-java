@@ -3,3 +3,6 @@
 
 package　Lecture10って書いたら、Javaは「Lecture10というフォルダに入ってるクラスなんだな」と思います。
 だから、Lecture10フォルダの中から実行しちゃうと、Lecture１０/Lecture１０/Main.classを探してしまうので、エラーになります。
+
+find . -name "*.class" -type f -delete 关于这条命令可以解释下吗？ 
+find . -name "*.class" -type f -deleteというコマンドについて、どういう意味なのか、詳しく説明してもらえますか
