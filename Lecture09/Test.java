@@ -1,6 +1,6 @@
 package Lecture09;
 
-public class TicTacToe {
+public class Test {
     /*
      * ３X３の2次元配列のゲーム盤をメンバとして持つ、クラスTicTacToeを作成しなさい。
      * なお、このクラスは次のメソッドを有するものとする。また、メンバーには２次元配列以外のものも含めてもよい。
@@ -12,80 +12,73 @@ public class TicTacToe {
      * メソッドshow()でゲーム盤を表示する。
      * メソッドisWinning()は、縦・横・斜めのいずれかで記号が全て揃った時にtrueを返し、それ以外はfalseを返す。
      */
-    public char[][] gameBoard;
-    private boolean playerTurn;
+    private char[][] gameBoard;
+    private boolean initialState;
 
-    public TicTacToe() {
+    public Test() {
         gameBoard = new char[3][3];
-        playerTurn = true;
-
-        for (int i = 0; i < 3; i++)
-            for (int j = 0; j < 3; j++)
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 gameBoard[i][j] = ' ';
-    }
-
-    boolean isFirst() {
-        return playerTurn;
-    }
-
-    void setMark(int row, int col) {
-
-        if (isEmpty(row, col)) {
-            gameBoard[row][col] = playerTurn ? 'o' : 'x';
-            playerTurn = !playerTurn;
+            }
         }
 
     }
 
-    boolean isEmpty(int row, int col) {
+    // isFirst()
+    public boolean isFirst() {
+        return initialState;
+    }
+
+    // setMark
+    public void setMark(int row,int col){
+        if (isEmpty(row, col)) {
+            gameBoard[row][col];
+        }
+
+    }
+
+    // isEmpty
+    public boolean isEmpty(int row, int col) {
         if (gameBoard[row][col] == ' ') {
             return true;
         } else {
             return false;
         }
-
     }
 
-    void show() {
+    // show()
+    public void show() {
         for (int i = 0; i < 3; i++) {
-            System.out.println(gameBoard[i][0] + "|" + gameBoard[i][1] + "|" + gameBoard[i][2]);
-            if (i < 2)
-                System.out.println("-----");
+            System.out.println(gameBoard[i][0] + " | " + gameBoard[i][1] + " | " + gameBoard[i][2]);
+            if (i < 2) {
+                System.out.println("-------------");
+            }
         }
     }
 
-    boolean isWinning() {
-        for (int i = 0; i < 3; i++) {
-            // 横
-            if (gameBoard[i][0] != ' ' &&
-                    gameBoard[i][0] == gameBoard[i][1] &&
-                    gameBoard[i][1] == gameBoard[i][2]) {
+    // isWinning()
+    public boolean isWinning() {
+
+        // 横and縦
+        for (int i = 3; i < 3; i++) {
+            if (gameBoard[i][0] != ' ' && gameBoard[i][0] == gameBoard[i][1] && gameBoard[i][1] == gameBoard[i][2]) {
                 return true;
             }
-
-            // 縦
-            if (gameBoard[0][i] != ' ' &&
-                    gameBoard[0][i] == gameBoard[1][i] &&
-                    gameBoard[1][i] == gameBoard[2][i]) {
+            if (gameBoard[0][i] != ' ' && gameBoard[0][i] == gameBoard[1][i] && gameBoard[1][i] == gameBoard[2][i]) {
                 return true;
             }
 
         }
 
         // 対角線
-        if (gameBoard[0][0] != ' ' &&
-                gameBoard[0][0] == gameBoard[1][1] &&
-                gameBoard[1][1] == gameBoard[2][2]) {
+        if (gameBoard[0][0] != ' ' && gameBoard[0][0] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[2][2]) {
             return true;
         }
-
-        if (gameBoard[0][2] != ' ' &&
-                gameBoard[0][2] == gameBoard[1][1] &&
-                gameBoard[1][1] == gameBoard[2][0]) {
+        if (gameBoard[0][2] != ' ' && gameBoard[0][2] == gameBoard[1][1] && gameBoard[1][1] == gameBoard[0][0]) {
             return true;
         }
 
         return false;
-
     }
 }
